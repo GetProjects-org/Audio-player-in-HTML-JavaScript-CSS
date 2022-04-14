@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Tutorial - Audio Player by GetProjects.org</title>
+<script type="text/javascript" src="player.js"></script>
+<link rel="stylesheet" type="text/css" href="player.css">
+</head>
+<body>
+<div id="wrapper">
+<div id='player'>
+<audio id="music_player" preload="auto" ontimeupdate="change_time()">
+<source src="Audio/bensound-adventure.mp3" type="audio/mpeg" />
+</audio>
+<text id="AudioPlayerTitle1">Audio Player by GetProjects.org</text>
+<text id="AudioPlayerTitle2"></text>
+<text id="AudioPlayerTitle3"></text>
+<text id="AudioPlayerAudioTitle1">Now Playing:</text>
+<text id="AudioPlayerAudioTitle2"></text>
+<text id="AudioPlayerAudioTitle3">BensoundAdve..</text>
+<text id="AudioPlayerAudioTitle4"></text>
+<img src="Textures/adventure.jpg"id= "artwork">
+<input type="image" src="Textures/play.png" onclick="play_aud()" id="play_button">
+<input type="image" src="Textures/pause.png" onclick="pause_aud()" id="pause_button">
+<input type="image" src="Textures/stop.png" onclick="stop_aud()" id="stop_button">
+<input type="image" src="Textures/replay.png" onclick="replay_aud()" id="replay_button">
+<img src="Textures/volume.png" id="vol_img">
+<input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+<input type="progress" id="change_time" onchange="change_time()" value="0" max="1" style="width:400px;"></progress>
+</div>
+</div>
+</body>
+</html>

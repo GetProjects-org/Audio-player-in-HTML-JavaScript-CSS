@@ -1,0 +1,38 @@
+body
+{
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:#00000F;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:50px;
+ width:995px;
+}
+
+#player
+{
+ background-color:#4CBB17;
+ width:400px;
+ margin-left:300px;
+ padding:5px;
+ box-sizing:border-box;
+ background:url(Textures/background.png);
+}
+input[type="image"]
+{
+ float:left;
+ height:20px;
+ margin-left:2px;
+ margin-right:5px;
+ margin-top:2px;
+}
+#vol_img
+{
+ margin-left:150px;
+ width:20px;
+}
